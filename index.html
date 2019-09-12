@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>uhh</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="lib/pronouncing-browser.js"></script>
     <script src="lib/tracery.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/tracery-experiments.js"></script>
+    <script src="scripts/randomword.js"></script>
   <link rel="stylesheet" href="style/stylesheet.css" type="text/css">
   </head>
   <body>
-    <div id="displayWord">
-    </div>
+    <h1 id="displayWord"></h1>
     <button onclick="getRandomWord()">New Word</button>
-
+<!--
     <div id="displayGrammar">
     </div>
-    <button onclick="getRandomGrammarSentence()">New Grammar</button>
+    <button onclick="getRandomGrammarSentence()">New Grammar</button> -->
+
+    <p id="rhymingPoetry"> </p>
+    <p id="phones0"> </p>
+    <p id="phones1"> </p>
+    <input id="rhymeText" type="text" value="Enter a word" />
+    <button onclick="getRhymingPoetry()">New Poem</button>
   </body>
 </html>
